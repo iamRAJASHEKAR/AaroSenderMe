@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/toolbar1"
+    android:padding="5dp"
+    android:background="@drawable/background"
+    android:layout_height="55dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl1"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:id="@+id/imgrelative"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_height="50dp">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/image1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/image2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+        <FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/text1"
+            android:textColor="@color/colorBrown"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/image3"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        <FONTS.TextViewFontStyle
+            android:id="@+id/text_tool"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

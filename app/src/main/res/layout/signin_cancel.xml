@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        >
+
+
+        <FONTS.ButtonFontStyle
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/ic_back" />
+
+        <FONTS.TextViewFontStyle
+            android:id="@+id/signup"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="@string/signin"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <FONTS.ButtonFontStyle
+            android:id="@+id/cancel"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:background="@color/colorWhite"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBrown"
+            android:textSize="20sp" />
+
+
+    </android.support.v7.widget.Toolbar>
+-->
+    <include android:id="@+id/signincanceltoolbar"
+        layout="@layout/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/aaro_logo" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <FONTS.TextViewFontStyle
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:text="We're almost done"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/one_off" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/two_on" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="140dp"
+                    android:background="@drawable/edittext_bottomroundcorners">
+
+                    <FONTS.EditTextFontStyle
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/edittext_bottomroundcorners"
+                        android:hint="Username"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/username"
+                        android:background="@color/colorGray">
+                    </View>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/username">
+
+                        <FONTS.EditTextFontStyle
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/edittext_bottomroundcorners"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="15dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/eye"
+                            android:paddingRight="10dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <FONTS.ButtonFontStyle
+                    android:id="@+id/button__signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl2"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:text="Sign up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_colour"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

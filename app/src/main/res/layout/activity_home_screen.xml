@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawerlayout"
+    android:layout_height="match_parent"
+    tools:context="com.example.yeswanth.aaro_project.HomeScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <include android:id="@+id/toolbar1"
+            layout="@layout/toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/relative1"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeimage1"
+                android:scaleType="fitXY"
+                android:src="@drawable/imageone"
+                />
+                <FONTS.ButtonFontStyle
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:textSize="21sp"
+                    android:text="@string/sendfiles"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorBrowntransparent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignBottom="@id/homeimage1"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/relative2"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homeimage2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/imagetwo"
+                    />
+                <FONTS.ButtonFontStyle
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:textSize="21sp"
+                    android:text="@string/invitefriends"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorBrowntransparent"
+                    android:layout_alignBottom="@id/homeimage2"
+                    android:layout_alignRight="@id/homeimage2"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/relative3"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homeimage3"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/imagethree"
+                    />
+                <FONTS.ButtonFontStyle
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:textAllCaps="false"
+                    android:text="@string/addaframe"
+                    android:textSize="21sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorBrowntransparent"
+                    android:layout_alignBottom="@id/homeimage3"
+                    android:layout_marginBottom="10dp"
+
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <fragment
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:name="com.example.yeswanth.aaro_project.SideMenuFragment"
+        android:id="@+id/fragment1"
+        app:layout="@layout/sidemenu"
+        tools:layout="@layout/sidemenu"
+        android:layout_gravity="start"/>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <include android:id="@+id/remindertoolbar"
+        layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/aaro_logo" />
+
+        <FONTS.TextViewFontStyle
+            android:id="@+id/remainder_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/remainder_text1"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <FONTS.TextViewFontStyle
+            android:id="@+id/remainder_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/remainder_text2"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FONTS.EditTextFontStyle
+                    android:id="@+id/your_email_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edittext_bottomroundcorners"
+                    android:hint="@string/your_email_address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp" />
+
+                <FONTS.ButtonFontStyle
+                    android:id="@+id/send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/your_email_address"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:text="Send"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_colour"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerlayoutabout"
+    android:layout_height="match_parent"
+    tools:context="com.example.yeswanth.aaro_project.About_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include android:id="@+id/abouttoolbar"
+            layout="@layout/toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/image"
+                android:background="@drawable/aaro_logo"
+                android:layout_gravity="center"
+                android:layout_height="80dp" />
+
+            <FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:id="@+id/ver"
+                android:text="@string/version"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+
+            <FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:id="@+id/releasenote"
+                android:text="@string/releasenotes"
+                android:textColor="@color/colorBrown"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content" />
+            <FONTS.ButtonFontStyle
+                android:layout_width="130dp"
+                android:id="@+id/takeatour"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/about"
+                android:text="@string/tour"
+                android:textColor="@color/colorBrown"
+                android:layout_height="40dp" />
+          <!--  <FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/privacystatment"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>-->
+
+                <FONTS.TextViewFontStyle
+                    android:layout_width="match_parent"
+                    android:id="@+id/about_text2"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/about_text2"
+                    android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:id="@+id/termstext"
+                    android:layout_marginTop="2dp"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBrown"
+                    android:text="@string/and_conditions"
+                    android:layout_height="wrap_content" />
+
+                <FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:id="@+id/and"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/and"
+                    android:layout_height="wrap_content" />
+                <FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:id="@+id/privacypolicy2"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBrown"
+                    android:text="@string/privacy_and_policy"
+                    android:layout_toRightOf="@id/and"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/face"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_smile"
+                android:layout_height="wrap_content" />
+            <FONTS.ButtonFontStyle
+                android:layout_width="300dp"
+                android:id="@+id/feedbackbutton"
+                android:background="@color/colorBrown"
+                android:text="@string/feedback"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <FONTS.TextViewFontStyle
+                android:layout_width="140dp"
+                android:textAlignment="center"
+                android:id="@+id/about_text4"
+                android:textSize="14sp"
+                android:text="@string/copyright"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:name="com.example.yeswanth.aaro_project.SideMenuFragment"
+        android:id="@+id/fragment1"
+        app:layout="@layout/sidemenu"
+        tools:layout="@layout/sidemenu"
+        android:layout_gravity="start"/>
+
+</android.support.v4.widget.DrawerLayout>

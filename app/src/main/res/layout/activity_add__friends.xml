@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.yeswanth.aaro_project.Add_Friends">
+
+    <include android:id="@+id/addfriend"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/myframesimage1"
+        android:src="@drawable/aaro_logo"
+        android:layout_gravity="center"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+
+        <FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/candara"
+            android:text="@string/friendname"
+            android:textColor="@color/colorBlack"
+            />
+        <FONTS.EditTextFontStyle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/add_friend_drawable"
+            />
+        <FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/friendsemail"
+            android:textColor="@color/colorBlack"
+            />
+        <FONTS.EditTextFontStyle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/add_friend_drawable"
+            />
+
+        <FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/textplaylist"
+            android:textColor="@color/colorBlack"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/add_friend_drawable"
+            >
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                />
+
+        </RelativeLayout>
+
+        <FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/note"
+            android:textColor="@color/colorBlack"
+            />
+        <FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:text="@string/notetext"
+            android:textColor="@color/colorBlack"
+            />
+        <FONTS.ButtonFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/addfriendbutton"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBrown"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_gravity="center"
+            android:text="@string/sendrequest"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

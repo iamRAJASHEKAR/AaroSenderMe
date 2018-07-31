@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.yeswanth.aaro_project.SideMenuFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_settings" />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/ic_cancel" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_frame"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/RelativeLayout">
+
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/circle_nav" />
+
+            <FONTS.TextViewFontStyle
+                android:id="@+id/text_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="RB"
+                android:textSize="80dp" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/frame_layout"
+            android:layout_marginTop="10dp">
+
+            <FONTS.TextViewFontStyle
+                android:id="@+id/username_side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="ROBERT BOSCH"
+                android:textColor="#ffff"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <!--
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circler_imageview"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/circle_nav" />
+
+        <FONTS.TextViewFontStyle
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circler_imageview"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_frame"
+        android:layout_marginTop="30dp">
+
+
+        <RelativeLayout
+            android:id="@+id/Relyt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <FONTS.TextViewFontStyle
+                android:id="@+id/sendfiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/sendfiles"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/sendfilesimage"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relyt2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Relyt1"
+            android:layout_marginTop="10dp">
+
+            <FONTS.TextViewFontStyle
+                android:id="@+id/myfiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/candara"
+                android:text="@string/myfiles"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/myfilesimage"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relyt3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Relyt2"
+            android:layout_marginTop="10dp">
+
+            <FONTS.TextViewFontStyle
+                android:id="@+id/myframes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/candara"
+                android:text="@string/myframes"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/myframesimage"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relyt4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Relyt3"
+            android:layout_marginTop="10dp">
+
+            <FONTS.TextViewFontStyle
+                android:id="@+id/friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/candara"
+                android:text="@string/friends"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/friendsimage"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relyt5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Relyt4"
+            android:layout_marginTop="10dp">
+
+            <FONTS.TextViewFontStyle
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/candara"
+                android:text="@string/help"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/helpimage"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relyt6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Relyt5"
+            android:layout_marginTop="10dp">
+
+            <FONTS.TextViewFontStyle
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/candara"
+                android:text="@string/about"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/aboutimage"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

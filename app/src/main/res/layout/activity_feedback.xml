@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.yeswanth.aaro_project.Feedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_height="match_parent">
+        <include android:id="@+id/myframestoolbar"
+            layout="@layout/toolbar"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/myframesimage1"
+            android:src="@drawable/aaro_logo"
+            android:layout_gravity="center"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <FONTS.TextViewFontStyle
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="30dp"
+                    android:textAlignment="center"
+                    android:text="@string/feedbacktext1"
+                    android:layout_gravity="center"
+                    />
+                <FONTS.TextViewFontStyle
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:text="@string/feedbacktext2"
+                    android:layout_marginTop="40dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    />
+
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/ratingBar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_starSize="30dp"
+                    app:srb_stepSize="1"
+                    android:layout_gravity="center"
+                    app:srb_starBorderWidth="5"
+                    app:srb_starsSeparation="10dp"
+                    android:layout_marginTop="10dp"
+                    app:srb_borderColor="@color/colorBrown"
+                    app:srb_fillColor="@color/colorBrown"
+
+                    />
+
+                <FONTS.EditTextFontStyle
+                    android:id="@+id/feedbackform"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:padding="5dp"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:scrollbars="vertical"
+                    android:gravity="top|start"
+                    android:hint="@string/yourmessage"
+                    android:imeOptions="actionDone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/add_friend_drawable"/>
+
+                <FONTS.ButtonFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:id="@+id/sendfeedbackbutton"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorBrown"
+                    android:textColor="@color/colorWhite"
+                    android:paddingLeft="100dp"
+                    android:paddingRight="100dp"
+                    android:layout_gravity="center"
+                    android:text="@string/send"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

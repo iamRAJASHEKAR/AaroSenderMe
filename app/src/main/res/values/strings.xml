@@ -1,0 +1,114 @@
+<resources>
+
+
+    <string name="app_name">Aaro</string>
+    <string name="sendfiles">Send Files</string>
+    <string name="myfiles">My Files</string>
+    <string name="myframes">My Frames</string>
+    <string name="friends">Friends</string>
+    <string name="addfriends">Add Friend</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="invitefriends">Invite Friends</string>
+    <string name="addaframe">Add a Frame</string>
+    <string name="frameslisted">You have currently no Frames listed</string>
+    <string name="myframestext2">Display your photo in Aaro
+        frame from Phone instantly</string>
+    <string name="buyframe">Buy a Aaro Frame</string>
+    <string name="alreadyhave">Already have a Aaro Frame ?</string>
+    <string name="pairnow">Pair Now</string>
+    <string name="noframesfound">No Frames Found</string>
+    <string name="searchagain">Search Again</string>
+    <string name="serialnumber">Enter Serial Number</string>
+    <string name="pairingtext1">Your frame and the mobile phone need
+    to be in the same wireless network for auto-detection to work</string>
+    <string name="nofriends">You have currently no Friends</string>
+    <string name="addfriend">Add Friend</string>
+    <string name="friendtext">Send photos to your friends or other Aaro
+    User or recive photos from them</string>
+    <string name="friendname">Name</string>
+    <string name="friendsemail">Email Address or Aaro Username</string>
+    <string name="textplaylist">When i recive files from this friend,
+    please add them to the following playlist :</string>
+    <string name="note">Note</string>
+    <string name="myplaylisttext1">Your Playlists are not Accessible anymore</string>
+    <string name="myplaylisttext2">To access your playlists again,
+    you need to pair a Aaro Frame.</string>
+    <string name="myalbumtext1">Your Albums are not Accessible anymore</string>
+    <string name="myalbumtext2">To access your albums again,
+    you need to pair a Aaro Frame.</string>
+    <string name="notetext">By adding a friend, you are allowing them_to
+    send photos to you. If they accept your friend request, you will also
+      be able to send files to them. </string>
+    <string name="sendrequest">Send friend Request</string>
+    <string name="feedbacktext1">Your feedback will help us to improve
+    our service.Thank you !</string>
+    <string name="feedbacktext2">What do you think of our app ?</string>
+    <string name="yourmessage">Your Message</string>
+    <string name="send">Send</string>
+    <string name="releasenotes">Release Notes</string>
+    <string name="tour">  Take a tour  </string>
+    <string name="feedback">Feedback</string>
+    <string name="version">Version 2.5.7</string>
+    <string name="copyright">Copyright@2018 Aaro All Rights Reserved</string>
+    <string name="privacystatment">To use of this product is subject
+        to Terms and conditions and Privacy Policy</string>
+
+
+    <string name="This_willbe_fast">This\'ll be fast</string>
+    <string name="Signup">Sign Up</string>
+    <string name="Optimize_photos">Optimize photos for upload</string>
+    <string name="Auto_accept">Auto-accept friend requests</string>
+    <string name="change_password">Change password</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="signout">Logout</string>
+
+    <string name="remainder">Reminder</string>
+    <string name="remainder_text1">Enter the email address you used to</string>
+    <string name="remainder_text2">register a Aaro account</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="remaindersent">Reminder Sent</string>
+    <string name="remaindersent_text1">Success! A password recovery link has</string>
+    <string name="remaindersent_text2">been sent to your email account</string>
+    <string name="username">  Username or email</string>
+    <string name="password">  Password</string>
+    <string name="text_signin1">Create Aaro Account ?</string>
+    <string name="signupnow">Sign up now</string>
+    <string name="text_signin2">I forgot my password </string>
+    <string name="signin">Sign in</string>
+    <string name="signup">Sign UP</string>
+    <string name="myaaro_hint">myaaro.com</string>
+    <string name="congrats">Congratulations !</string>
+    <string name="congrats_text1">You have successfully created Aaro
+    Smart Frame Account.Now you can start sharing your files from phone to your wall. </string>
+    <string name="congrats_text2">Smart Frame Account.Now you can start</string>
+    <string name="congrats_text3">sharing your files from phone to your wall.</string>
+
+    <string name="terms">Terms</string>
+
+    <string name="and">and</string>
+    <string name="privacy_and_policy">Privacy Policy</string>
+    <string name="and_conditions">Terms and conditions</string>
+    <string name="about_text4">Copyright@2018 Aaro</string>
+    <string name="about_text_5">All Rights Reserved</string>
+    <string name="about_text3">and conditions and Privacy Policy</string>
+    <string name="about_text2">To use of this product is subject to</string>
+    <string name="alertdialogtext">Please accept our privacy policy and terms of services</string>
+    <string name="alertdialogbtn">ok</string>
+
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="terms_of_services">Terms of services</string>
+    <string name="continuebtn">Continue</string>
+    <string name="privacy_policy">privacy policy</string>
+    <string name="i_have_read_and_agree_to_the">I have read and agree to the</string>
+    <string name="email_address">Email Address</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+
+</resources>
